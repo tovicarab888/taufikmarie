@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taufik Mansur Mar'ie | Digital Marketing Expert</title>
+    <meta name="description" content="CV Super Gokil Gila Taufik Mansur Mar'ie dengan animasi keren dan fitur lengkap">
+    
+    <!-- Font Awesome 6.5.1 (Terbaru) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Music Player CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <style>
+        :root {
+            --primary: #3a86ff;
+            --secondary: #8338ec;
+            --accent: #ff006e;
+            --bg-light: #f8f9fa;
+            --bg-dark: #121212;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --card-bg: rgba(30, 41, 59, 0.9);
+            --shadow: 0 10px 20px rgba(0,0,0,0.2);
+            --gradient: linear-gradient(135deg, #3a86ff, #8338ec, #ff006e);
+        }
+        
+        [data-theme="light"] {
+            --bg-primary: var(--bg-light);
+            --bg-secondary: #ffffff;
+            --text-primary: var(--text-dark);
+            --text-secondary: #495057;
+            --card-bg: rgba(255, 255, 255, 0.9);
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: var(--bg-dark);
+            --bg-secondary: #1e1e1e;
+            --text-primary: var(--text-light);
+            --text-secondary: #adb5bd;
+            --card-bg: rgba(30, 41, 59, 0.9);
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <!-- Background Animasi Particle JS -->
+    <div id="particles-js"></div>
+    
+    <!-- Preloader -->
+<div class="preloader">
+  <div class="loader">
+    <div class="loader-bar"></div>
+    <div class="loader-bar"></div>
+    <div class="loader-bar"></div>
+    <div class="loader-bar"></div>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+    
+    <!-- Welcome Modal -->
+    <div class="welcome-modal">
+        <div class="welcome-content">
+            <h2>Selamat Datang <span>di CV</span> Saya!</h2>
+            <p>Sebuah perjalanan karir yang penuh warna dan prestasi siap ditampilkan untuk Anda.</p>
+            <div class="welcome-buttons">
+                <button id="interested-btn" class="btn-glow">Saya Tertarik!</button>
+                <button id="not-interested-btn" class="btn-ghost">Tidak Tertarik</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Thank You Modal -->
+    <div class="thankyou-modal">
+        <div class="thankyou-content">
+            <i class="fas fa-heart"></i>
+            <h2>Terima Kasih Atas Kunjungan Anda!</h2>
+            <p>Kami menghargai waktu yang telah Anda luangkan. Semoga hari Anda menyenangkan!</p>
+            <button id="close-thankyou" class="btn-close">Tutup</button>
+        </div>
+    </div>
+    
+<!-- WhatsApp Modal -->
+<div class="wa-modal">
+  <div class="wa-content">
+    <i class="fab fa-whatsapp"></i>
+    <h2>Kirim Pesan via WhatsApp</h2>
+
+    <div class="form-group">
+      <input type="text" id="sender-name" placeholder="Nama Anda" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="company-name" placeholder="Nama Perusahaan" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="position-offered" placeholder="Posisi / Penawaran" required>
+    </div>
+
+    <div class="form-group">
+      <textarea id="wa-message" placeholder="Tulis pesan Anda..." required></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button id="send-wa" class="btn-wa">Kirim via WhatsApp</button>
+      <button id="cancel-wa" class="btn-cancel">Batal</button>
+    </div>
+  </div>
+</div>
+    
+<!-- Password Modal -->
+<div class="password-modal">
+  <div class="password-content">
+    <i class="fas fa-lock"></i>
+    <h2>Download CV PDF</h2>
+    <p>Masukkan password untuk mengunduh CV dalam format PDF</p>
+    
+    <div class="form-group">
+      <input type="password" id="pdf-password" placeholder="Masukkan Password">
+      <span class="password-error"></span>
+    </div>
+
+    <div class="form-actions">
+      <button id="submit-password" class="btn-submit">Download</button>
+      <button id="contact-admin" class="btn-contact">Kontak Admin</button>
+    </div>
+  </div>
+</div>
+    <!-- Main Container -->
+<div class="main-container">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="toggle-theme" class="toggle-checkbox">
+        <label for="toggle-theme" class="toggle-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+    
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="player-controls">
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="pause-btn"><i class="fas fa-pause"></i></button>
+            <button id="next-btn"><i class="fas fa-forward"></i></button>
+            <button id="prev-btn"><i class="fas fa-backward"></i></button>
+        </div>
+        <div class="player-info">
+            <p id="song-title">Lagu CV - Loading...</p>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+        </div>
+    </div>
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="time-container" id="timeContainer"></div>
+        <h1 class="header-title animate__animated animate__fadeInDown">TAUFIK MANSUR MAR'IE</h1>
+        <p class="header-subtitle animate__animated animate__fadeInUp">Digital Marketing | E-commerce Specialist | Professional Manager</p>
+    </header>
+    
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-pic-container">
+            <div class="profile-pic-animation">
+                <img src="https://iili.io/2LBssRa.jpg" alt="Taufik Mansur Mar'ie" class="profile-pic">
+                <div class="circle-animation"></div>
+                <div class="circle-animation delay-1"></div>
+                <div class="circle-animation delay-2"></div>
+            </div>
+        </div>
+        
+        <div class="profile-info">
+            <h2 data-aos="fade-up">Halo, Saya Tovic!</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
+                Seorang profesional dengan pengalaman lebih dari 18 tahun di bidang pemasaran digital dan e-commerce. 
+                Berkomitmen memberikan hasil terbaik untuk kemajuan bisnis dengan pendekatan kreatif dan strategis.
+            </p>
+            
+            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://www.facebook.com/share/1HZTHB1B5Y/" target="_blank" class="social-link fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="tiktok.com/@quickcellbdg" target="_blank" class="social-link tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/quickcellbdg/profilecard/?igsh=aDFjam5vMHNjdDZw" target="_blank" class="social-link insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Statistics Section -->
+<section class="statistics-section">
+   <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Statistik Karir</h2>
+    <div class="stats-container">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-icon">
+                <i class="fas fa-smile-beam"></i>
+            </div>
+            <div class="stat-info">
+                <h3>70%</h3>
+                <p>Kepuasan Pelanggan</p>
+            </div>
+            <div class="stat-wave"></div>
+        </div>
+        
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="stat-info">
+                <h3>77%</h3>
+                <p>Pencapaian Target Penjualan</p>
+            </div>
+            <div class="stat-wave"></div>
+        </div>
+        
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+                <h3>75%</h3>
+                <p>Efisiensi Tim</p>
+            </div>
+            <div class="stat-wave"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Personal Details Section -->
+<section class="personal-details">
+   <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Data Diri</h2>
+    <div class="details-grid">
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Alamat</h3>
+                <p>SMPN 1 No.48 Cileunyi, Kabupaten Bandung</p>
+            </div>
+        </div>
+        
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="detail-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Email</h3>
+                <p>lapakmarie@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="detail-icon">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Usia</h3>
+                <p>46 Tahun</p>
+            </div>
+        </div>
+        
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="detail-icon">
+                <i class="fas fa-ruler-vertical"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Tinggi Badan</h3>
+                <p>173 cm</p>
+            </div>
+        </div>
+        
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="detail-icon">
+                <i class="fas fa-weight"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Berat Badan</h3>
+                <p>68 kg</p>
+            </div>
+        </div>
+        
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="detail-icon">
+                <i class="fas fa-praying-hands"></i>
+            </div>
+            <div class="detail-content">
+                <h3>Agama</h3>
+                <p>Islam</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Work Experience Section -->
+<section class="work-experience">
+   <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Pengalaman Kerja</h2>
+    <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Health Manager - Business Owner</h3>
+                    <span class="timeline-date">Des 2023 - Des 2024</span>
+                </div>
+                <p class="timeline-company">PT. Coway International Indonesia - Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Memimpin 20 Health Planner dalam memasarkan produk seperti water purifier dan air purifier</li>
+                    <li><i class="fas fa-check-circle"></i> Mengembangkan strategi direct selling untuk meningkatkan angka penjualan hingga 10% dalam 6 bulan pertama</li>
+                    <li><i class="fas fa-check-circle"></i> Melatih tim agar memahami produk dan menguasai teknik penjualan yang efektif</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Tetap aktif secara pasif, namun sudah selesai dalam peran aktif sebagai organisasi formal
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experience 2 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Pemilik dan Pengelola E-commerce</h3>
+                    <span class="timeline-date">Jan 2020 - Des 2023</span>
+                </div>
+                <p class="timeline-company">Lapak Marie (Tokopedia) & Electrivo Bike (Shopee) - Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Menjual aksesori gadget Apple (AirPods Max, AirPods Pro, Apple Watch Ultra), sepeda listrik, helm Cairbull, dan kacamata sepeda</li>
+                    <li><i class="fas fa-check-circle"></i> Mengelola hubungan langsung dengan supplier di Cina, memahami proses impor dan forwarding barang</li>
+                    <li><i class="fas fa-check-circle"></i> Mencapai rating 4,9 di Tokopedia dan Shopee dengan ulasan pelanggan yang sangat positif</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Usaha berhenti karena kekurangan modal untuk melanjutkan
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experience 3 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Manager Digital Marketing</h3>
+                    <span class="timeline-date">Jun 2018 - Okt 2019</span>
+                </div>
+                <p class="timeline-company">Surya Putra Motor - Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Memimpin 12 anggota tim dalam 4 divisi: Content Creator, Desain Grafis, Marketing Ads Specialist, dan Marketing Automation Specialist</li>
+                    <li><i class="fas fa-check-circle"></i> Meningkatkan penjualan pembiayaan syariah sebesar Rp 1 miliar dalam waktu 8 bulan</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Perubahan komitmen perusahaan dan terlalu banyak intervensi terhadap strategi yang telah dirancang
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experience 4 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Koordinator Marketing</h3>
+                    <span class="timeline-date">Sep 2012 - Agu 2017</span>
+                </div>
+                <p class="timeline-company">Area Properti - Gedebage, Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Mengelola tim marketing beranggotakan 20 orang untuk mencapai target penjualan properti</li>
+                    <li><i class="fas fa-check-circle"></i> Merancang strategi iklan melalui surat kabar, pameran booth, dan promosi online</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Perusahaan berhenti beroperasi karena dampak krisis COVID-19
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experience 5 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Team Leader SME</h3>
+                    <span class="timeline-date">Jan 2010 - Nov 2011</span>
+                </div>
+                <p class="timeline-company">Bank Mega - Buah Batu, Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Mengelola tim 8 Account Officer SME untuk mencapai target lending</li>
+                    <li><i class="fas fa-check-circle"></i> Menyusun strategi efektif, melakukan mapping area, dan memberikan pelatihan internal rutin kepada tim</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Tidak merasa cocok dengan ritme kerja di sektor finansial perbankan
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experience 6 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="timeline-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Supervisor Sales</h3>
+                    <span class="timeline-date">Feb 2003 - Sep 2009</span>
+                </div>
+                <p class="timeline-company">CV Kurnia Jaya - Bandung</p>
+                <ul class="timeline-description">
+                    <li><i class="fas fa-check-circle"></i> Meningkatkan penjualan spare part hingga 5% dari target tahunan</li>
+                    <li><i class="fas fa-check-circle"></i> Mengelola tim 12 sales canvaser, memberikan motivasi, pelatihan, dan strategi kerja yang efektif</li>
+                </ul>
+                <div class="exit-reason">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Alasan Keluar:</span> Mencari karir yang lebih luas di perusahaan nasional
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section class="skills-section">
+   <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Kemampuan</h2>
+    <div class="skills-container">
+        <div class="skill-category" data-aos="fade-up">
+            <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Kepemimpinan</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Komunikasi Efektif</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Manajemen Konflik</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <span>Adaptasi Cepat</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 68%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="fas fa-laptop-code"></i> Hard Skills</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fas fa-search"></i>
+                    <span>SEO, SEM, Meta Ads</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 62%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Google Analytics</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 52%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>CRM & Software SDM</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 55%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-ad"></i>
+                    <span>Strategi Iklan Digital</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards Section -->
+<section class="awards-section">
+   <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Penghargaan & Pelatihan</h2>
+    <div class="awards-container">
+        <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="award-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="award-content">
+                <h3>Account Officer SME Terbaik</h3>
+                <p>Bank Mega - Jawa Barat (2010)</p>
+            </div>
+        </div>
+        
+        <div class="award-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="award-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="award-content">
+                <h3>Lisensi Agen Asuransi</h3>
+                <p>AAJI - Jawa Barat (2010)</p>
+            </div>
+        </div>
+        
+        <div class="award-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="award-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="award-content">
+                <h3>Selling Skills Training</h3>
+                <p>ANZ - Jakarta (2006)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Side Business Section -->
+<section class="business-section">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Usaha (Tdk Aktif)</h2>
+  <div class="business-container">
+    
+    <!-- Tokopedia Store -->
+    <div class="business-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="business-logo">
+        <i class="fas fa-shopping-bag" style="font-size: 32px; color: #03AC0E;"></i>
+      </div>
+      <div class="business-info">
+        <h3>Lapak Marie</h3>
+        <p>E-commerce store menjual aksesori gadget dan produk digital</p>
+        <a href="https://tokopedia.link/RwE1HS05rQb" target="_blank" class="business-link">
+          Kunjungi Toko <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Shopee Store -->
+    <div class="business-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="business-logo">
+        <i class="fas fa-store" style="font-size: 32px; color: #FF5722;"></i>
+      </div>
+      <div class="business-info">
+        <h3>Electrivo Bike</h3>
+        <p>Toko online khusus sepeda listrik dan aksesorinya</p>
+        <a href="https://s.shopee.co.id/6V8T2THtn2" target="_blank" class="business-link">
+          Kunjungi Toko <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Strengths & Weaknesses Section -->
+    <section class="sw-section">
+        <div class="sw-container">
+            <div class="strengths" data-aos="fade-up">
+                <h3><i class="fas fa-check-circle"></i> Kelebihan</h3>
+                <ul>
+                    <li><i class="fas fa-star"></i> Memiliki integritas tinggi</li>
+                    <li><i class="fas fa-star"></i> Berorientasi pada hasil</li>
+                    <li><i class="fas fa-star"></i> Mampu memotivasi tim</li>
+                    <li><i class="fas fa-star"></i> Cepat beradaptasi dengan teknologi</li>
+                </ul>
+            </div>
+            
+            <div class="weaknesses" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-exclamation-triangle"></i> Kekurangan</h3>
+                <ul>
+                    <li><i class="fas fa-exclamation"></i> Penguasaan bahasa Inggris masih perlu pengembangan</li>
+                    <li><i class="fas fa-exclamation"></i> Terkadang terlalu ambisius dalam mengejar target</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PDF Download Section -->
+    <section class="pdf-section">
+       <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Download CV</h2>
+        <div class="pdf-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="pdf-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="pdf-info">
+                <h3>CV Taufik Mansur Mar'ie</h3>
+                <p>Format PDF - 1.2 MB</p>
+                <button id="download-pdf" class="btn-download">
+                    <i class="fas fa-download"></i> Download CV
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Closing Section -->
+    <section class="closing-section" data-aos="fade-up">
+        <h2 class="section-title">Penutup</h2>
+        <div class="closing-content">
+            <p>
+                Dengan pengalaman yang luas di berbagai industri, saya percaya dapat memberikan kontribusi besar 
+                melalui kerja keras, inovasi, dan dedikasi. Saya selalu terbuka untuk peluang baru dan tantangan 
+                yang dapat membantu saya berkembang lebih jauh.
+            </p>
+            <p class="signature">
+                Hormat saya,<br>
+                <span>Taufik Mansur Mar'ie</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-wa" id="floatingWa">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Taufik Mansur Mar'ie. All Rights Reserved.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> dan dedikasi tinggi</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Audio Player (Hidden) -->
+<audio id="bg-music" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<style>
+    /* Base Styles */
+    
+    html, body {
+  overflow-x: hidden;
+}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        transition: all 0.5s ease;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    /* Particles Background */
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+    }
+    
+ /* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+   height: 100%;
+  background: var(--bg-dark, #121212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 6px;
+  height: 60px;
+}
+
+.loader-bar {
+  width: 6px;
+  height: 40px;
+  background: linear-gradient(180deg, #3a86ff, #8338ec);
+  animation: bounce 1.2s infinite ease-in-out;
+  border-radius: 3px;
+}
+
+.loader-bar:nth-child(1) { animation-delay: 0s; }                
+.loader-bar:nth-child(2) { animation-delay: 0.1s; }
+.loader-bar:nth-child(3) { animation-delay: 0.2s; }
+.loader-bar:nth-child(4) { animation-delay: 0.3s; }
+.loader-bar:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1.2); }
+}
+    
+    /* Theme Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
+    .toggle-checkbox {
+        display: none;
+    }
+    
+    .toggle-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60px;
+        height: 30px;
+        background: var(--bg-secondary);
+        border-radius: 50px;
+        padding: 5px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+    }
+    
+    .toggle-label i {
+        font-size: 16px;
+        color: var(--text-primary);
+        z-index: 1;
+    }
+    
+    .toggle-ball {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: var(--gradient);
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        transition: transform 0.3s ease;
+    }
+    
+    .toggle-checkbox:checked + .toggle-label .toggle-ball {
+        transform: translateX(30px);
+    }
+    
+    /* Music Player */
+    .music-player {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: var(--card-bg);
+        border-radius: 50px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 1000;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+    }
+    
+    .player-controls {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .player-controls button {
+        background: transparent;
+        border: none;
+        color: var(--text-primary);
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .player-controls button:hover {
+        background: rgba(255,255,255,0.1);
+        transform: scale(1.1);
+    }
+    
+    .player-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #song-title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    #volume-slider {
+        width: 100px;
+        height: 4px;
+        -webkit-appearance: none;
+        background: rgba(255,255,255,0.2);
+        border-radius: 2px;
+        outline: none;
+    }
+    
+    #volume-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 12px;
+        height: 12px;
+        background: var(--primary);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    /* Header Styles */
+    .header {
+        text-align: center;
+        padding: 40px 20px 20px;
+        position: relative;
+    }
+    
+    .header-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #3a86ff, #8338ec, #ff006e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .header-subtitle {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    
+    .time-container {
+        display: inline-block;
+        background: var(--card-bg);
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(5px);
+    }
+    
+    /* Profile Section */
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    
+    .profile-pic-container {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid var(--primary);
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 10px 30px rgba(58, 134, 255, 0.3);
+        transition: all 0.5s ease;
+    }
+    
+    .profile-pic:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 40px rgba(58, 134, 255, 0.4);
+    }
+    
+    .circle-animation {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 3s infinite;
+        opacity: 0;
+    }
+    
+    .delay-1 {
+        animation-delay: 1s;
+    }
+    
+    .delay-2 {
+        animation-delay: 2s;
+    }
+    
+    @keyframes pulse {
+        0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.5; }
+        70% { transform: translate(-50%, -50%) scale(1.1); opacity: 0; }
+        100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+    }
+    
+    .profile-info {
+        text-align: center;
+        max-width: 700px;
+    }
+    
+    .profile-info h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: var(--primary);
+    }
+    
+    .profile-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        margin-bottom: 20px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: white;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+    }
+    
+    .social-link:hover {
+        transform: translateY(-5px) scale(1.1);
+    }
+    
+    .fb { background: #1877f2; }
+    .tiktok { background: #000000; }
+    .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .linkedin { background: #0077b5; }
+    
+.section-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 60px auto 40px;
+  color: var(--text-color, #ffffff);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  border-radius: 2px;
+}
+    
+    /* Statistics Section */
+    .statistics-section {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .stats-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .stat-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 30px;
+        width: 250px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+    }
+    
+    .stat-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+    
+    .stat-icon {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+    
+    .stat-info h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        background: linear-gradient(90deg, #3a86ff, #8338ec);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .stat-info p {
+        font-size: 1rem;
+        color: var(--text-secondary);
+    }
+    
+    .stat-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg, #3a86ff, #8338ec);
+        animation: wave 2s linear infinite;
+    }
+    
+    @keyframes wave {
+        0% { background-position-x: 0; }
+        100% { background-position-x: 100px; }
+    }
+    
+    /* Personal Details Section */
+    .personal-details {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .details-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .detail-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(5px);
+    }
+    
+    .detail-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    
+    .detail-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(58, 134, 255, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: var(--primary);
+    }
+    
+    .detail-content h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: var(--primary);
+    }
+    
+    .detail-content p {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+    
+    /* Work Experience Section */
+    .work-experience {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: var(--primary);
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        margin-left: -1px;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 40px;
+        display: flex;
+    }
+    
+    .timeline-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        flex-shrink: 0;
+        margin-right: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .timeline-content {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        flex-grow: 1;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(5px);
+    }
+    
+    .timeline-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .timeline-header h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-right: 10px;
+    }
+    
+    .timeline-date {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        background: rgba(58, 134, 255, 0.1);
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .timeline-company {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+    
+    .timeline-description {
+        list-style: none;
+        margin-bottom: 15px;
+    }
+    
+    .timeline-description li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--text-primary);
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .timeline-description li i {
+        color: var(--primary);
+        margin-right: 10px;
+        font-size: 0.8rem;
+        margin-top: 3px;
+    }
+    
+    .exit-reason {
+        background: rgba(255, 0, 110, 0.1);
+        border-left: 3px solid var(--accent);
+        padding: 10px 15px;
+        border-radius: 0 8px 8px 0;
+        font-size: 0.9rem;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+    }
+    
+    .exit-reason i {
+        color: var(--accent);
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    
+    .exit-reason span {
+        font-weight: 600;
+        margin-right: 5px;
+    }
+    
+    /* Skills Section */
+    .skills-section {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .skill-category {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        flex: 1;
+        min-width: 300px;
+        max-width: 450px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(5px);
+    }
+    
+    .skill-category h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .skill-items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .skill-item span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: var(--text-primary);
+    }
+    
+    .skill-item i {
+        color: var(--primary);
+        font-size: 1rem;
+    }
+    
+    .skill-bar {
+        width: 100%;
+        height: 6px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    
+    .skill-level {
+        height: 100%;
+        background: var(--gradient);
+        border-radius: 3px;
+    }
+    
+    /* Awards Section */
+    .awards-section {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .awards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .award-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+    }
+    
+    .award-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    
+    .award-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(58, 134, 255, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: var(--primary);
+        flex-shrink: 0;
+    }
+    
+    .award-content h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: var(--text-primary);
+    }
+    
+    .award-content p {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+    
+    /* Business Section */
+    .business-section {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .business-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .business-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+    }
+    
+    .business-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    
+    .business-logo {
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        flex-shrink: 0;
+    }
+    
+    .business-logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .business-info {
+        flex-grow: 1;
+    }
+    
+    .business-info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: var(--text-primary);
+    }
+    
+    .business-info p {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-bottom: 10px;
+    }
+    
+    .business-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+        color: var(--primary);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .business-link:hover {
+        color: var(--accent);
+    }
+    
+    /* Strengths & Weaknesses Section */
+    .sw-section {
+        padding: 40px 20px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+    
+    .sw-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .strengths, .weaknesses {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        flex: 1;
+        min-width: 300px;
+        max-width: 450px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(5px);
+    }
+    
+    .strengths h3, .weaknesses h3 {
+   font-size: 1.2rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .strengths h3 {
+        color: var(--primary);
+    }
+    
+    .weaknesses h3 {
+        color: var(--accent);
+    }
+    
+    .strengths ul, .weaknesses ul {
+        list-style: none;
+    }
+    
+    .strengths li, .weaknesses li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        color: var(--text-primary);
+    }
+    
+    .strengths li i {
+        color: var(--primary);
+    }
+    
+    .weaknesses li i {
+        color: var(--accent);
+    }
+    
+         
+        /* PDF Section */
+        .pdf-section {
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        
+        .pdf-container {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(5px);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .pdf-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 0, 110, 0.1);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        
+        .pdf-info {
+            flex-grow: 1;
+        }
+        
+        .pdf-info h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+        
+        .pdf-info p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Closing Section */
+        .closing-section {
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .closing-content {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(5px);
+        }
+        
+        .closing-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+        
+        .signature {
+            font-style: italic;
+            margin-top: 30px;
+        }
+        
+        .signature span {
+            font-weight: 600;
+            color: var(--primary);
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--card-bg);
+            margin-top: 50px;
+        }
+        
+        .footer-content p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+        }
+        
+        .footer-content i {
+            color: var(--accent);
+        }
+        
+        /* Floating WhatsApp Button */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse-wa 2s infinite;
+        }
+        
+        .floating-wa:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        /* Modal Styles */
+        .welcome-modal, .thankyou-modal, .wa-modal, .password-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .welcome-modal.active, .thankyou-modal.active, .wa-modal.active, .password-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .welcome-content, .thankyou-content, .wa-content, .password-content {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .welcome-modal.active .welcome-content,
+        .thankyou-modal.active .thankyou-content,
+        .wa-modal.active .wa-content,
+        .password-modal.active .password-content {
+            transform: translateY(0);
+        }
+        
+        .welcome-content h2, .thankyou-content h2, .wa-content h2, .password-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .welcome-content span {
+            color: var(--accent);
+            font-weight: 700;
+        }
+        
+        .welcome-content p, .thankyou-content p, .password-content p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .welcome-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-glow, .btn-ghost, .btn-wa, .btn-cancel, .btn-submit, .btn-contact, .btn-close {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .btn-glow {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-ghost:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+        
+        .btn-wa {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-cancel {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--text-secondary);
+        }
+        
+        .btn-submit {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-contact {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-close {
+            background: var(--gradient);
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .thankyou-content i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .wa-content i {
+            font-size: 3rem;
+            color: #25D366;
+            margin-bottom: 20px;
+        }
+        
+        .password-content i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .password-error {
+            color: var(--accent);
+            font-size: 0.8rem;
+            margin-top: 5px;
+            display: block;
+            min-height: 16px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            
+            .header-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .stat-card {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .pdf-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .welcome-content, .thankyou-content, .wa-content, .password-content {
+                padding: 30px 20px;
+            }
+            
+            .welcome-content h2, .thankyou-content h2, .wa-content h2, .password-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 1.8rem;
+            }
+            
+            .social-links {
+                gap: 10px;
+            }
+            
+            .social-link {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+            
+            .welcome-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn-glow, .btn-ghost, .btn-wa, .btn-cancel, .btn-submit, .btn-contact, .btn-close {
+                width: 100%;
+            }
+            
+            .floating-wa {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+    </style>
+        <!-- JavaScript Libraries -->
+<!-- JavaScript Libraries & Fungsionalitas CV -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>
+  AOS.init({ duration: 800, once: true });
+
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.querySelector('.preloader').style.opacity = '0';
+      setTimeout(function () {
+        document.querySelector('.preloader').style.display = 'none';
+        document.querySelector('.welcome-modal').classList.add('active');
+      }, 400);
+    }, 700);
+  });
+
+  document.getElementById('toggle-theme').addEventListener('change', function () {
+    document.body.setAttribute('data-theme', this.checked ? 'light' : 'dark');
+  });
+
+  function updateTime() {
+    const now = new Date();
+    const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+    const d = days[now.getDay()];
+    const h = String(now.getHours()).padStart(2, '0');
+    const m = String(now.getMinutes()).padStart(2, '0');
+    const s = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('timeContainer').textContent = `${d}, ${h}:${m}:${s} WIB`;
+  }
+  setInterval(updateTime, 1000);
+  updateTime();
+
+  const interestedBtn = document.getElementById('interested-btn');
+  const notInterestedBtn = document.getElementById('not-interested-btn');
+  const thankyouModal = document.querySelector('.thankyou-modal');
+  const closeThankyou = document.getElementById('close-thankyou');
+
+  interestedBtn.addEventListener('click', () => {
+    document.querySelector('.welcome-modal').classList.remove('active');
+    setTimeout(() => {
+      bgMusic.volume = 0.5;
+      playSong();
+    }, 1000);
+  });
+
+  notInterestedBtn.addEventListener('click', () => {
+    document.querySelector('.welcome-modal').classList.remove('active');
+    thankyouModal.classList.add('active');
+  });
+
+  closeThankyou.addEventListener('click', () => thankyouModal.classList.remove('active'));
+
+  const floatingWa = document.getElementById('floatingWa');
+  const waModal = document.querySelector('.wa-modal');
+  document.getElementById('cancel-wa').onclick = () => waModal.classList.remove('active');
+  floatingWa.onclick = () => waModal.classList.add('active');
+
+  document.getElementById('send-wa').onclick = () => {
+    const name = document.getElementById('sender-name').value.trim();
+    const company = document.getElementById('company-name').value.trim();
+    const position = document.getElementById('position-offered').value.trim();
+    const message = document.getElementById('wa-message').value.trim();
+
+    if (!name || !company || !position || !message) {
+      alert('Semua kolom wajib diisi.');
+      return;
+    }
+
+    const text = `*KONTAK DARI WEBSITE CV*
+
+` +
+      `*Nama:* ${name}
+` +
+      `*Perusahaan:* ${company}
+` +
+      `*Posisi / Penawaran:* ${position}
+` +
+      `*Pesan:*
+${message}`;
+
+    const waLink = `https://wa.me/6281223202218?text=${encodeURIComponent(text)}`;
+    window.open(waLink, '_blank');
+    waModal.classList.remove('active');
+  };
+
+  const downloadPdf = document.getElementById('download-pdf');
+  const passwordModal = document.querySelector('.password-modal');
+  const submitPassword = document.getElementById('submit-password');
+  const contactAdmin = document.getElementById('contact-admin');
+  const pdfPassword = document.getElementById('pdf-password');
+  const passwordError = document.querySelector('.password-error');
+
+  downloadPdf.onclick = () => passwordModal.classList.add('active');
+  submitPassword.onclick = () => {
+    if (pdfPassword.value === '098765') {
+      window.open('https://drive.google.com/file/d/1tyc77aV3nTbIDyAfSNvySLnEla_yzmk3/view?usp=drivesdk', '_blank');
+      passwordModal.classList.remove('active');
+      pdfPassword.value = '';
+      passwordError.textContent = '';
+    } else {
+      passwordError.textContent = 'Password salah! Silakan coba lagi atau hubungi admin';
+    }
+  };
+  contactAdmin.onclick = () => {
+    passwordModal.classList.remove('active');
+    waModal.classList.add('active');
+    document.getElementById('wa-message').value = 'Halo, saya ingin meminta password untuk download CV Taufik Mansur Mar\'ie';
+  };
+
+  const bgMusic = document.getElementById('bg-music');
+  const playBtn = document.getElementById('play-btn');
+  const pauseBtn = document.getElementById('pause-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const prevBtn = document.getElementById('prev-btn');
+  const volumeSlider = document.getElementById('volume-slider');
+  const songTitle = document.getElementById('song-title');
+  const songs = [
+    { title: "Lagu CV - Sukses Selalu", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+    { title: "Lagu CV - Semangat Kerja", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+    { title: "Lagu CV - Profesional Banget", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
+  ];
+  let currentSong = 0;
+  function playSong() {
+    bgMusic.src = songs[currentSong].src;
+    bgMusic.play();
+    songTitle.textContent = songs[currentSong].title;
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'block';
+  }
+  playBtn.onclick = () => playSong();
+  pauseBtn.onclick = () => {
+    bgMusic.pause();
+    playBtn.style.display = 'block';
+    pauseBtn.style.display = 'none';
+  };
+  nextBtn.onclick = () => { currentSong = (currentSong + 1) % songs.length; playSong(); };
+  prevBtn.onclick = () => { currentSong = (currentSong - 1 + songs.length) % songs.length; playSong(); };
+  volumeSlider.oninput = function () { bgMusic.volume = this.value / 100; };
+
+  window.addEventListener('blur', () => bgMusic.pause());
+  window.addEventListener('focus', () => bgMusic.play());
+
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: "#3a86ff" },
+      shape: { type: "circle", stroke: { width: 0, color: "#000" }, polygon: { nb_sides: 5 } },
+      opacity: { value: 0.5 },
+      size: { value: 3, random: true },
+      line_linked: { enable: true, distance: 150, color: "#3a86ff", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 140, line_linked: { opacity: 1 } },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+</body>
+</html>
